@@ -44,7 +44,19 @@
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
       <version>${lucene.version}</version>
-    </dependency>                     
+    </dependency>
+
+    <!-- apahce http -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.4.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>4.4.1</version>
+    </dependency>
   </dependencies>
 
   <build>

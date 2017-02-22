@@ -51,4 +51,9 @@ Answer: Please check your JAVA_HOME setting. If JAVA_HOME setting exists, it may
 
 # Resources #
 1. [Build IKAnalyzer With Solr 6.3.0](http://www.cnblogs.com/liang1101/articles/6395016.html)
-    
+2. New way of remote calls automatically update thesaurus interval 
+
+# Summary #
+At present there are two kinds of scheme for automatic dynamic loading dictionary:
+1. Configure the local external thesaurus update by a scalar
+2. By configuring the remote file to update thesaurus   (All the back of the class with the suffix Remote is corresponding to the realization of the way)
