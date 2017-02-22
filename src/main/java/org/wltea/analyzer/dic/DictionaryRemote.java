@@ -103,8 +103,10 @@ public class DictionaryRemote {
 					return singleton;
 				}
 			}
-			for (String location : cfg.getRemoteExtDictionarys())
-			{
+			/**
+			 * 定时任务执行
+			 */
+			for (String location : cfg.getRemoteExtDictionarys()) {
 				pool.scheduleAtFixedRate(new Monitor(location), 10L, 60L, TimeUnit.SECONDS);
 			}
 			for (String location : cfg.getRemoteExtStopWordDictionarys()) {
