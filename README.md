@@ -11,10 +11,6 @@ Realize the dynamic load of thesaurus and don't need to restart the service can 
 
 >  mvn clean install
 
- - JDK7
-
-> mvn clean -Djavac.src.version=1.7 -Djavac.target.version=1.7 install
-
 # Configuration #
 ### solrconfig.xml ###
     Add ik-analyzer-solr-6.3.0.jar   
@@ -54,6 +50,6 @@ Answer: Please check your JAVA_HOME setting. If JAVA_HOME setting exists, it may
 2. New way of remote calls automatically update thesaurus interval 
 
 # Summary #
-At present there are two kinds of scheme for automatic dynamic loading dictionary:
-1. Configure the local external thesaurus update by a scalar
-2. By configuring the remote file to update thesaurus   (All the back of the class with the suffix Remote is corresponding to the realization of the way)
+ - At present there are two kinds of scheme for automatic dynamic loading dictionary:
+>  1. Configure the local external thesaurus update by a scalar
+>  2. By configuring the remote file to update thesaurus   (All the back of the class with the suffix Remote is corresponding to the realization of the way)
